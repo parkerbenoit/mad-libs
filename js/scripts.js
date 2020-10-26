@@ -26,15 +26,15 @@
 // looop practice //
 
 $(document).ready(function() {
-  $("#formOne").submit(function() {
+  $("form#formOne").submit(function(event) {
     event.preventDefault();
     // let favFruit = "peach";
     // let favCity = "Paris";
     // let favorites = [favFruit, favCity];
-    let person1input = "input#person1";
-    let person2input = "input#person2";
+    let person1input = $("input#person1").val();
+    let person2input = $("input#person2").val();
     //const person1Input = $("input#person1").val();
-    let array [person1input, person2input];
+    let array = [person1input, person2input];
     array.forEach(function(element) {
       alert(element + "Hi");
     });
